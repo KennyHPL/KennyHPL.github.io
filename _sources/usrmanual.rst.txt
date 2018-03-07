@@ -3,6 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+================================
 Walls and Holes User Manual
 ================================
 
@@ -12,14 +13,14 @@ Walls and Holes User Manual
 
 Introduction
 ============
-Walls and Holes is an application that lets you quickly and easily create your own 3-D map from a 2-D tile map which can be exported into an object file. 
+Walls and Holes is a 2D to 3D map editor which lets you develop maps for your games. The primary feature is converting a 2D tile map into a useable 3D mesh. Walls and Holes focuses on speed and ease of use.
 
 Getting Started
 ================
 
 Installing the program
 ----------------------
-**Windows Installation:**
+**Windows/Mac Installation:**
 	To install the program go `here`_.
 
 .. _here: https://github.com/Bdtrotte/3D-Map-Gen
@@ -56,3 +57,118 @@ Here we choose the initial size of the map, whether it's indoors or outdoors, an
 
 The Tile Template System
 ========================
+
+Overview
+--------
+The tile template system is for users to define different tiles which can output differing meshes.
+
+Creating New Tile Template Sets
+-------------------------------
+Tile templates will be stored in tile template sets. To create a new Tile Template set press the |plus| button in the bottom left-hand corner of the screen, then you will be greeted by the following prompt:
+
+.. |plus|	image:: images/add.png
+			:width: 16
+			:height: 16
+
+.. image:: images/TiletempPrompt.png
+   :align: center
+  
+*New Tile Template Set Prompt*
+
+Enter the desired file directory which the Tile Template Set will be saved, it is recommended that you save the Tile Template Set and the map files in the same directory.
+
+Once that is done, a new window will pop up on the left-hand side of the screen in the Tile Set View
+
+.. image:: images/ExampleTileTemp.png
+   :align: center
+
+Press the ``Add Template`` button and this will appear in the side toolbar:
+
+.. image:: images/TileTemplate.png
+   :align: center
+
+You can modify the following properties of a tile:
+	* **Height:** Height of the tile
+	* **Thickness:** How small or large the tile will be (max: 1.00)
+	* **X Position:** The X position within the grid of the mesh
+	* **Y Position:** The Y position within the grid of the mesh
+	* **Material:** The material which the tile will use
+
+**Example of changing the thickness**
+
+.. image:: images/Thickness.png
+   :align: center
+
+*Left: Tile thickness of .25*
+
+*Right: Tile thickness of 1.00*
+
+Tools
+======
+
+Tile Map Tools
+--------------
+
+* **Brush Tool** |brush| ``B``
+	- The Brush tool is the main tool which is used. Its radius can be adjusted using the spin box when the tool is selected.
+
+* **Fill Tool** |fill| ``F``
+	- The Fill tool is fills in an empty region
+
+* **Line Tool** |line| ``L``
+	- The Line tool creates a line, click and drag to use
+
+* **Rect Tool** |rect| ``R``
+	- The Rect tool is used to draw rectangles, click and drag to use
+
+* **Ellipse Tool** |ellipse| ``E``
+	- The ellipse tool draws ellipses, click and drag to use
+
+* **Selection Tool** |select| ``S``
+	- The selection tool is used to select tiles.
+	- Single click to select one tile
+	- Shift-Click to select multiple tiles
+	- Double click to select tiles with same tile template which are touching
+	- Triple click to select all of one tile template
+
+.. |brush|	image:: images/brush.png
+			:width: 16
+			:height: 16
+
+.. |rect|	image:: images/rectangle-fill.png
+			:width: 16
+			:height: 16
+
+.. |line|	image:: images/line.png
+			:width: 16
+			:height: 16
+
+.. |ellipse|	image:: images/ellipse-fill.png
+				:width: 16
+				:height: 16
+
+.. |fill|	image:: images/fill.png
+			:width: 16
+			:height: 16
+
+.. |select|	image:: images/mouse.png
+			:width: 16
+			:height: 16
+
+
+Keyboard Shortcuts
+==================
+
+* ``Ctrl + Mousewheel`` - Zoom in/out of the Tile Map
+* ``Ctrl + N`` - Create a new map
+* ``Ctrl + S`` - Save the map
+* ``Ctrl + Shift +S`` - Save the map
+* ``Ctrl + O`` - Load an existing map
+* ``Ctrl + W`` - Close the map
+* ``Ctrl + E`` - Export the map mesh
+* ``B`` - Activate the brush tool
+* ``F`` - Activate the fill tool
+* ``L`` - Activate the line tool
+* ``R`` - Activate the rect tool
+* ``E`` - Activate the ellipse tool
+* ``S`` - Activate the selection tool
