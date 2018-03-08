@@ -112,7 +112,7 @@
 </li>
 <li><a class="reference internal" href="#materials">Materials</a><ul>
 <li><a class="reference internal" href="#adding-and-removing-materials">Adding and Removing Materials</a></li>
-<li><a class="reference internal" href="#assigning-materials">Assigning Materials</a></li>
+<li><a class="reference internal" href="#assigning-materials-to-tile-templates">Assigning Materials to Tile Templates</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#keyboard-shortcuts">Keyboard Shortcuts</a></li>
@@ -219,6 +219,9 @@ you can draw on the map. To draw on the map you must select a
 Templates provided, the <em>Wall</em>, and <em>Ground/Eraser</em>.</p>
 <img alt="_images/MapCreated.png" class="align-center" src="_images/MapCreated.png" />
 <p><em>Map is created</em></p>
+<p>To save the map go to: File→Save Map <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">S</span></code></p>
+<p>Once the map is saved you may load the map into the program at anytime
+you wish using File→Load Map <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">O</span></code></p>
 </div>
 </div>
 <div class="section" id="the-tile-template-system">
@@ -337,13 +340,16 @@ adjusted using the spin box when the tool is selected.</li>
 window, after pressing the button this window will appear:</p>
 <img alt="_images/MaterialView.png" class="align-center" src="_images/MaterialView.png" />
 <p><em>Material View</em></p>
+<p>We are using the <a class="reference external" href="https://en.wikipedia.org/wiki/Phong_reflection_model">Phong</a> reflection model for our shaders for the material</p>
+<img alt="_images/phong.png" class="align-center" src="_images/phong.png" />
+<p><em>https://en.wikipedia.org/wiki/Phong_reflection_model</em></p>
 <dl class="docutils">
-<dt>You can change the following properties of a material:</dt>
+<dt>You can change the following properties of a material :</dt>
 <dd><ul class="first last simple">
 <li><strong>Ambient:</strong> Specifies the minimum brightness of a material</li>
 <li><strong>Diffuse:</strong> Diffuse determines the general color of a material when light shines on it</li>
-<li><strong>Specular:</strong> Specifies how light reflects off a material</li>
-<li><strong>Shininess:</strong> How shiny a material is</li>
+<li><strong>Specular:</strong> How bright the the third image is</li>
+<li><strong>Shininess:</strong> How large the dots in the third image are</li>
 <li><dl class="first docutils">
 <dt><strong>Texture:</strong></dt>
 <dd><ul class="first last">
@@ -357,8 +363,8 @@ window, after pressing the button this window will appear:</p>
 </dd>
 </dl>
 </div>
-<div class="section" id="assigning-materials">
-<h3>Assigning Materials<a class="headerlink" href="#assigning-materials" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="assigning-materials-to-tile-templates">
+<h3>Assigning Materials to Tile Templates<a class="headerlink" href="#assigning-materials-to-tile-templates" title="Permalink to this headline">¶</a></h3>
 <p>To assign materials to a Tile Template select the Tile Template which
 you wish to assign a material to, and click on the <code class="docutils literal notranslate"><span class="pre">...</span></code> button</p>
 <img alt="_images/TileTemplateView.png" class="align-center" src="_images/TileTemplateView.png" />
@@ -371,6 +377,7 @@ you wish to assign a material to, and click on the <code class="docutils literal
 </div>
 <div class="section" id="keyboard-shortcuts">
 <h2>Keyboard Shortcuts<a class="headerlink" href="#keyboard-shortcuts" title="Permalink to this headline">¶</a></h2>
+<p><strong>For Mac replace</strong> <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> <strong>with</strong> <code class="docutils literal notranslate"><span class="pre">Command</span></code></p>
 <ul class="simple">
 <li><code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">Mousewheel</span></code> - Zoom in/out of the Tile Map</li>
 <li><code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">N</span></code> - Create a new map</li>
@@ -379,12 +386,12 @@ you wish to assign a material to, and click on the <code class="docutils literal
 <li><code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">O</span></code> - Load an existing map</li>
 <li><code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">W</span></code> - Close the map</li>
 <li><code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">E</span></code> - Export the map mesh</li>
-<li><code class="docutils literal notranslate"><span class="pre">B</span></code> - Activate the brush tool</li>
-<li><code class="docutils literal notranslate"><span class="pre">F</span></code> - Activate the fill tool</li>
-<li><code class="docutils literal notranslate"><span class="pre">L</span></code> - Activate the line tool</li>
-<li><code class="docutils literal notranslate"><span class="pre">R</span></code> - Activate the rect tool</li>
-<li><code class="docutils literal notranslate"><span class="pre">E</span></code> - Activate the ellipse tool</li>
-<li><code class="docutils literal notranslate"><span class="pre">S</span></code> - Activate the selection tool</li>
+<li><code class="docutils literal notranslate"><span class="pre">B</span></code> - Activate the Brush tool</li>
+<li><code class="docutils literal notranslate"><span class="pre">F</span></code> - Activate the Fill tool</li>
+<li><code class="docutils literal notranslate"><span class="pre">L</span></code> - Activate the Line tool</li>
+<li><code class="docutils literal notranslate"><span class="pre">R</span></code> - Activate the Rect tool</li>
+<li><code class="docutils literal notranslate"><span class="pre">E</span></code> - Activate the Ellipse tool</li>
+<li><code class="docutils literal notranslate"><span class="pre">S</span></code> - Activate the Selection tool</li>
 </ul>
 </div>
 </div>

@@ -62,6 +62,11 @@ Templates provided, the *Wall*, and *Ground/Eraser*.
 
 *Map is created*
 
+To save the map go to: File→Save Map ``Ctrl + S``
+
+Once the map is saved you may load the map into the program at anytime
+you wish using File→Load Map ``Ctrl + O``
+
 .. _Tile Template:
 
 The Tile Template System
@@ -203,17 +208,26 @@ window, after pressing the button this window will appear:
 
 *Material View*
 
-You can change the following properties of a material:
+We are using the `Phong`_ reflection model for our shaders for the material
+
+.. image:: images/phong.png
+   :align: center
+
+.. _Phong: https://en.wikipedia.org/wiki/Phong_reflection_model
+
+*https://en.wikipedia.org/wiki/Phong_reflection_model*
+
+You can change the following properties of a material :
 	* **Ambient:** Specifies the minimum brightness of a material
 	* **Diffuse:** Diffuse determines the general color of a material when light shines on it
-	* **Specular:** Specifies how light reflects off a material
-	* **Shininess:** How shiny a material is
+	* **Specular:** How bright the the third image is
+	* **Shininess:** How large the dots in the third image are
 	* **Texture:** 
 		- The texture of a material is an image specifying how a material looks.
 		- To assign a texture click the ``...`` button and select the texture you wish to use.
 
-Assigning Materials
--------------------
+Assigning Materials to Tile Templates
+-------------------------------------
 To assign materials to a Tile Template select the Tile Template which
 you wish to assign a material to, and click on the ``...`` button
 
@@ -234,6 +248,7 @@ Choose the material which you wish to use for the Tile Template
 
 Keyboard Shortcuts
 ==================
+**For Mac replace** ``Ctrl`` **with** ``Command``
 
 * ``Ctrl + Mousewheel`` - Zoom in/out of the Tile Map
 * ``Ctrl + N`` - Create a new map
@@ -242,9 +257,9 @@ Keyboard Shortcuts
 * ``Ctrl + O`` - Load an existing map
 * ``Ctrl + W`` - Close the map
 * ``Ctrl + E`` - Export the map mesh
-* ``B`` - Activate the brush tool
-* ``F`` - Activate the fill tool
-* ``L`` - Activate the line tool
-* ``R`` - Activate the rect tool
-* ``E`` - Activate the ellipse tool
-* ``S`` - Activate the selection tool
+* ``B`` - Activate the Brush tool
+* ``F`` - Activate the Fill tool
+* ``L`` - Activate the Line tool
+* ``R`` - Activate the Rect tool
+* ``E`` - Activate the Ellipse tool
+* ``S`` - Activate the Selection tool
