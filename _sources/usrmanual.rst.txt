@@ -13,7 +13,9 @@ Walls and Holes User Manual
 
 Introduction
 ============
-Walls and Holes is a 2D to 3D map editor which lets you develop maps for your games. The primary feature is converting a 2D tile map into a useable 3D mesh. Walls and Holes focuses on speed and ease of use.
+Walls and Holes is a 2D map editor which lets you develop 3D maps for
+your games. The primary feature for this application is the ease and 
+speed of which you can create a map, and at the end have a great mesh for use.
 
 Getting Started
 ================
@@ -48,23 +50,33 @@ The New Map dialog looks like this:
 
 *New Map Dialog*
 
-Here we choose the initial size of the map, whether it's indoors or outdoors, and whether if the map will have a ceiling or not. After creating the new map you will see a grid of empty sqaures, and now you can draw on the map using the *Wall* template.
+Here we choose the initial size of the map, whether it's indoors or
+outdoors, and whether if the map will have a ceiling or not. After 
+creating the new map you will see a grid of empty sqaures, and now 
+you can draw on the map. To draw on the map you must select a 
+`Tool`_ and also a `Tile Template`_, there are two default Tile 
+Templates provided, the *Wall*, and *Ground/Eraser*.
 
 .. image:: images/MapCreated.png
    :align: center
 
 *Map is created*
 
+.. _Tile Template:
+
 The Tile Template System
 ========================
 
 Overview
 --------
-The tile template system is for users to define different tiles which can output differing meshes.
+The Tile Template system is for users to define different tiles 
+which can output differing meshes.
 
 Creating New Tile Template Sets
 -------------------------------
-Tile templates will be stored in tile template sets. To create a new Tile Template set press the |plus| button in the bottom left-hand corner of the screen, then you will be greeted by the following prompt:
+Tile templates will be stored in Tile Template sets. To create a new 
+Tile Template set press the |plus| button in the bottom left-hand corner 
+of the screen, then you will be greeted by the following prompt:
 
 .. |plus|	image:: images/add.png
 			:width: 16
@@ -75,9 +87,12 @@ Tile templates will be stored in tile template sets. To create a new Tile Templa
   
 *New Tile Template Set Prompt*
 
-Enter the desired file directory which the Tile Template Set will be saved, it is recommended that you save the Tile Template Set and the map files in the same directory.
+Enter the desired file directory which the Tile Template Set will be 
+saved, it isrecommended that you save the Tile Template Set and the map 
+files in the same directory.
 
-Once that is done, a new window will pop up on the left-hand side of the screen in the Tile Set View
+Once that is done, a new window will pop up on the left-hand side of 
+the screen in the Tile Set View
 
 .. image:: images/ExampleTileTemp.png
    :align: center
@@ -87,7 +102,7 @@ Press the ``Add Template`` button and this will appear in the side toolbar:
 .. image:: images/TileTemplate.png
    :align: center
 
-You can modify the following properties of a tile:
+You can modify the following properties of a Tile Template:
 	* **Height:** Height of the tile
 	* **Thickness:** How small or large the tile will be (max: 1.00)
 	* **X Position:** The X position within the grid of the mesh
@@ -103,6 +118,24 @@ You can modify the following properties of a tile:
 
 *Right: Tile thickness of 1.00*
 
+Saving and Loading Tile Templates
+---------------------------------
+To save a Tile Template press the |save| button, and you will be 
+prompted to choose the directory which the Tile Template will be saved in.
+
+To load a Tile Template press the |load| button, and you will be 
+prompted to choose the Tile Template which you want to use. 
+
+.. |save|	image:: images/save.png
+			:width: 16
+			:height: 16
+
+.. |load|	image:: images/load.png
+			:width: 16
+			:height: 16
+
+.. _Tool:
+
 Tools
 ======
 
@@ -110,7 +143,8 @@ Tile Map Tools
 --------------
 
 * **Brush Tool** |brush| ``B``
-	- The Brush tool is the main tool which is used. Its radius can be adjusted using the spin box when the tool is selected.
+	- The Brush tool is the main tool which is used. Its radius can be 
+	  adjusted using the spin box when the tool is selected.
 
 * **Fill Tool** |fill| ``F``
 	- The Fill tool is fills in an empty region
@@ -128,8 +162,8 @@ Tile Map Tools
 	- The selection tool is used to select tiles.
 	- Single click to select one tile
 	- Shift-Click to select multiple tiles
-	- Double click to select tiles with same tile template which are touching
-	- Triple click to select all of one tile template
+	- Double click to select tiles with same Tile Template which are touching
+	- Triple click to select all of one Tile Template
 
 .. |brush|	image:: images/brush.png
 			:width: 16
@@ -155,6 +189,48 @@ Tile Map Tools
 			:width: 16
 			:height: 16
 
+Materials
+=========
+Every Tile Template can be assigned a custom material and texture.
+
+Adding and Removing Materials
+-----------------------------
+To add a material press the ``Add Material`` button in the material view
+window, after pressing the button this window will appear:
+
+.. image:: images/MaterialView.png
+   :align: center
+
+*Material View*
+
+You can change the following properties of a material:
+	* **Ambient:** Specifies the minimum brightness of a material
+	* **Diffuse:** Diffuse determines the general color of a material when light shines on it
+	* **Specular:** Specifies how light reflects off a material
+	* **Shininess:** How shiny a material is
+	* **Texture:** 
+		- The texture of a material is an image specifying how a material looks.
+		- To assign a texture click the ``...`` button and select the texture you wish to use.
+
+Assigning Materials
+-------------------
+To assign materials to a Tile Template select the Tile Template which
+you wish to assign a material to, and click on the ``...`` button
+
+
+.. image:: images/TileTemplateView.png
+   :align: center
+
+*Tile Template View*
+
+This window will pop up:
+
+.. image:: images/MaterialChoose.png
+   :align: center
+
+*Choosing a Material*
+
+Choose the material which you wish to use for the Tile Template
 
 Keyboard Shortcuts
 ==================
@@ -162,7 +238,7 @@ Keyboard Shortcuts
 * ``Ctrl + Mousewheel`` - Zoom in/out of the Tile Map
 * ``Ctrl + N`` - Create a new map
 * ``Ctrl + S`` - Save the map
-* ``Ctrl + Shift +S`` - Save the map
+* ``Ctrl + Shift + S`` - Save the map
 * ``Ctrl + O`` - Load an existing map
 * ``Ctrl + W`` - Close the map
 * ``Ctrl + E`` - Export the map mesh
