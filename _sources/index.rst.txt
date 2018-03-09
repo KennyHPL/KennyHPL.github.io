@@ -14,7 +14,7 @@ Walls and Holes User Manual
 Introduction
 ============
 Walls and Holes is a 2D map editor which lets you develop 3D maps for
-your games. The primary feature for this applicatiPon is the ease and 
+your games. The primary feature for this application is the ease and 
 speed of which you can create a map, and then at the end have a great mesh which 
 can be exported for your own use.
 
