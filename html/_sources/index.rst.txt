@@ -243,7 +243,7 @@ We are using the `Phong`_ reflection model for our shaders for the material
 
 .. _Phong: https://en.wikipedia.org/wiki/Phong_reflection_model
 
-`Source <https://en.wikipedia.org/wiki/Phong_reflection_model>`_
+`Source <https://en.wikipedia.org/wiki/Phong_reflection_model#/media/File:Phong_components_version_4.png>`_
 
 You can change the following properties of a material :
 	* **Ambient:** Specifies the minimum brightness of a material
@@ -292,3 +292,6 @@ Keyboard Shortcuts
 * ``R`` - Activate the Rect tool
 * ``E`` - Activate the Ellipse tool
 * ``S`` - Activate the Selection tool
+
+An Example
+============

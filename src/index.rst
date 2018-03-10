@@ -292,3 +292,6 @@ Keyboard Shortcuts
 * ``R`` - Activate the Rect tool
 * ``E`` - Activate the Ellipse tool
 * ``S`` - Activate the Selection tool
+
+An Example
+============
