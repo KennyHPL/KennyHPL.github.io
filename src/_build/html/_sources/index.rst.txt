@@ -14,7 +14,7 @@ Walls and Holes User Manual
 Introduction
 ============
 Walls and Holes is a 2D map editor which lets you develop 3D maps for
-your games. The primary feature for this application is the ease and 
+your games. The primary feature for this applicatiPon is the ease and 
 speed of which you can create a map, and then at the end have a great mesh which 
 can be exported for your own use.
 
@@ -243,12 +243,12 @@ We are using the `Phong`_ reflection model for our shaders for the material
 
 .. _Phong: https://en.wikipedia.org/wiki/Phong_reflection_model
 
-`Source <https://en.wikipedia.org/wiki/Phong_reflection_model#/media/File:Phong_components_version_4.png>`_
+`Source <https://en.wikipedia.org/wiki/Phong_reflection_model>`_
 
 You can change the following properties of a material :
 	* **Ambient:** Specifies the minimum brightness of a material
 	* **Diffuse:** Diffuse determines the general color of a material when light shines on it
-	* **Specular:** How bright the the third image is
+	* **Specular:** How bright the dots in the thrid image are
 	* **Shininess:** How large the dots in the third image are
 	* **Texture:** 
 		- The texture of a material is an image specifying how a material looks.
