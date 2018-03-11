@@ -12,3 +12,4 @@ Walls and Holes User Manual
    :caption: Contents:
 
    content
+   examples
