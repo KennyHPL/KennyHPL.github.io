@@ -1,0 +1,5 @@
+<?xml version = '1.0' encoding='UTF-8'?>
+<TileTemplateSet name="ItzaSet">
+    <TileMaterial shininess="1" texture="/Users/Bright/Documents/OneDrive/Documents/ucsc/cmps115/project/example/marble.jpg" name="marble" ambient="1" diffuse="1" specular="1"/>
+    <TileTemplate sidematerial="-1" thickness="1" color="#ffec0a" topmaterial="0" name="ItzaBrick" height="2" position="0.5,0.5" hassidemtrl="0"/>
+</TileTemplateSet>
