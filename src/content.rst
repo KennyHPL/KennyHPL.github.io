@@ -1,7 +1,7 @@
 Introduction
 ============
 Walls and Holes is a 2D map editor which lets you develop 3D maps for
-your games. The primary feature for this applicatiPon is the ease and 
+your games. The primary feature for this application is the ease and 
 speed of which you can create a map, and then at the end have a great mesh which 
 can be exported for your own use.
 
@@ -11,7 +11,11 @@ Getting Started
 Installing the program
 ----------------------
 **Windows/Mac Installation:**
-	To install the program go `here`_.
+	* :download:`Windows installer <downloads/win_deploy.zip>`
+
+	* :download:`Mac installer <downloads/mac_deploy.zip>`
+
+To see the source code and files of the program go `here`_.
 
 .. _here: https://github.com/Bdtrotte/3D-Map-Gen
 
