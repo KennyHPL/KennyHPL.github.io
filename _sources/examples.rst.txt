@@ -1,10 +1,10 @@
 Examples
 ========
 
-Chicken Itza
+Chichen Itza
 ------------
 
-This example will shows you how to create a coarse grain 3D model of Chicken Itza using our WallsAndHoles 3D map editor. A completed example can be found `here`_.
+This example will shows you how to create a coarse grain 3D model of Chichen Itza using our WallsAndHoles 3D map editor. A completed example can be found `here`_.
 
 .. _here: https://github.com/Bdtrotte/3D-Map-Gen/tree/master/example
 
@@ -13,7 +13,7 @@ This example will shows you how to create a coarse grain 3D model of Chicken Itz
 
 *Chichen Itza*
 
-First step, create materials. Add material by click "Add Material" button in Material View, this action will create a default material named as "new Tile Material".
+First step, create materials. Add material by clicking the "Add Material" button in Material View, this action will create a default material named as "new Tile Material".
 
 .. image:: images/addMaterial.png
    :align: center
@@ -25,9 +25,9 @@ Rename the material to "marble" and set its texture image to marble.png.
 .. image:: images/addMaterial2.png
    :align: center
 
-*Make marble Material*
+*Making Marble Material*
 
-After create material, next the create the tile template using this material. Push the |add| button in Template Set View to create a new tile template set. Set the name and path as follow, a tile template set named Itza will appears in Template Set View.
+After creating a material, next the create the Tile Template using this material. Push the |add| button in Template Set View to create a new tile template set. Set the name and path as follows, a tile template set named Itza will appears in Template Set View.
 
 .. |add|	image:: images/add.png
 			:width: 16
@@ -54,12 +54,12 @@ Then create a empty map using the shortcut ``Ctrl + N``, as follow:
 
 *New Map Dialog*
 
-Now you can draw the map with the tile template you just created. Draw a square at center of map, set the height of ItzaBrick to 2, a cubiod will appear in mesh view immediately.
+Now you can draw the map with the tile template you just created. Draw a square at center of map, set the height of ItzaBrick to 2, a cuboid will appear in mesh view immediately.
 
 .. image:: images/new_map.png
    :align: center
 
-*A cubiod*
+*A cuboid*
 
 Repeat above step, create different materials for road, step, wall and temple (or just import the ItzaSet.wts provided in example). Draw the layout of Chichen Itza follow:
 
@@ -68,7 +68,7 @@ Repeat above step, create different materials for road, step, wall and temple (o
 
 *A Flat Chichen Itza*
 
-Change the height layout of map (height of tiles) to lift this "flat chichen Itza" into layer shape pyramid. Select tiles using selection tool, the resulted map will be displayed in Mesh View like follow:
+Change the height layout of map (height of tiles) to lift this "flat Chichen Itza" into layer shape pyramid. Select tiles using selection tool, the resulted map will be displayed in Mesh View like follow:
 
 .. image:: images/completed_map.png
    :align: center
