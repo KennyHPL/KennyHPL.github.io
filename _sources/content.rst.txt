@@ -11,13 +11,13 @@ Getting Started
 Installing the program
 ----------------------
 **Windows/Mac Installation:**
-	* :download:`Windows installer <downloads/win_deploy.zip>`
+	* :download:`Windows installer <downloads/WAH_1_0_Win64_installer.exe>`
 
 	* :download:`Mac installer <downloads/mac_deploy.zip>`
 
 To see the source code and files of the program go `here`_.
 
-.. _here: https://github.com/Bdtrotte/3D-Map-Gen
+.. _here: https://github.com/Bdtrotte/3D-Map-Gen/releases
 
 Creating a New Map
 ------------------
