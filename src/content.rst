@@ -11,9 +11,9 @@ Getting Started
 Installing the program
 ----------------------
 **Windows/Mac Installation:**
-	* :download:`Windows installer <downloads/WAH_1_0_Win64_installer.exe>`
+	* :download:`Windows installer v1.0 <downloads/WAH_1_0_Win64_installer.exe>`
 
-	* :download:`Mac installer <downloads/mac_deploy.zip>`
+	* :download:`Mac installer v1.0 <downloads/mac_deploy.zip>`
 
 To see the source code and files of the program go `here`_.
 
@@ -277,6 +277,7 @@ Keyboard Shortcuts
 * ``Ctrl + W`` - Close the map
 * ``Ctrl + E`` - Export the map mesh
 * ``Ctrl + Z`` - Undo last action
+* ``Ctrl + Y`` - Redo last action
 * ``B`` - Activate the Brush tool
 * ``F`` - Activate the Fill tool
 * ``L`` - Activate the Line tool
