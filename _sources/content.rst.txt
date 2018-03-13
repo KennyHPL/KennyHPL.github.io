@@ -13,9 +13,9 @@ Installing the program
 **Windows/Mac Installation:**
 	* :download:`Windows installer v1.0 <downloads/WAH_1_0_Win64_installer.exe>`
 
-	* :download:`Mac installer v1.0 <downloads/mac_deploy.zip>`
+	* :download:`Mac installer v1.0 <downloads/WAH_1_0.dmg>`
 
-To see the source code and files of the program go `here`_.
+To view the source code and latest release of the application go: `here`_.
 
 .. _here: https://github.com/Bdtrotte/3D-Map-Gen/releases
 
